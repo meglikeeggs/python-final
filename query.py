@@ -3,6 +3,9 @@ from movies import Movies
 movies = Movies('./movies.txt')
 
 def list_all():  
+    for i in range (len(movies._movies)):
+        print(movies._movies[i]['name'])
+    print()
 
 
 def list_name():
