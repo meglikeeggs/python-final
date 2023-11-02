@@ -9,7 +9,13 @@ def list_all():
 
 
 def list_name():
-    
+     movie_name = input("Please enter a name you would like to search by: ").lower()
+
+    for i in range (len(movies._movies)):
+        if movies._movies[i]['name'].lower().__contains__(str(movie_name)):
+            print(movies._movies[i]['name'])
+            print()
+
 
 def list_cast():
 
